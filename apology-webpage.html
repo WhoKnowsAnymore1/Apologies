@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apology to Livv</title>
+  <style>
+    body {
+      background-color: #ffebee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: radial-gradient(circle at 10% 20%, #fce4ec 15%, #ffebee 60%);
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .container {
+      background-color: white;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    h1 {
+      color: #ec407a;
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(236, 64, 122, 0.2);
+    }
+    
+    p {
+      color: #757575;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    
+    .highlight {
+      color: #ec407a;
+      font-weight: 600;
+    }
+    
+    button {
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      padding: 14px 36px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(236, 64, 122, 0.3);
+      font-weight: 600;
+      margin-top: 16px;
+    }
+    
+    button:hover {
+      background-color: #d81b60;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(236, 64, 122, 0.4);
+    }
+    
+    .blossom {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      opacity: 0.7;
+      z-index: 1;
+    }
+    
+    .top-left {
+      top: 20px;
+      left: 20px;
+      transform: rotate(-20deg);
+    }
+    
+    .top-right {
+      top: 20px;
+      right: 20px;
+      transform: rotate(20deg);
+    }
+    
+    .bottom-left {
+      bottom: 20px;
+      left: 20px;
+      transform: rotate(-160deg);
+    }
+    
+    .bottom-right {
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(160deg);
+    }
+    
+    .pixel-heart {
+      display: inline-block;
+      font-size: 24px;
+      color: #ec407a;
+      animation: pulse 1.5s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .particle {
+      position: absolute;
+      background-color: #f8bbd0;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 15s infinite linear;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-100vh) rotate(360deg); }
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 24px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .blossom {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  
+  <div class="container">
+    <h1>Bestie Livv, I'm Sorry</h1>
+    <p>
+      I am sorry for trauma dumping and throwing my problems at you. I know it's <span class="highlight">wrong</span>, and I truly apologise. 
+      <br><br>
+      I did it because I was sad and scared and just wanted to talk to somebody I <span class="highlight">trusted</span>. But I should have done it differently.
+      <br><br>
+      I really appreciate you, and I hope you can forgive me. <span class="pixel-heart">💖</span>
+    </p>
+    <button id="talkButton">Talk to Me? [Y/N]</button>
+  </div>
+  
+  <svg class="blossom top-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 C 70 30, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 z" fill="#f8bbd0" />
+    <circle cx="50" cy="50" r="10" fill="#f48fb1" />
+  </svg>
+  
+  <svg class="blossom top-right" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 C 70 30, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 z" fill="#f8bbd0" />
+    <circle cx="50" cy="50" r="10" fill="#f48fb1" />
+  </svg>
+  
+  <svg class="blossom bottom-left" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 C 70 30, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 z" fill="#f8bbd0" />
+    <circle cx="50" cy="50" r="10" fill="#f48fb1" />
+  </svg>
+  
+  <svg class="blossom bottom-right" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 10 C 70 30, 90 30, 90 50 C 90 70, 70 90, 50 90 C 30 90, 10 70, 10 50 C 10 30, 30 10, 50 10 z" fill="#f8bbd0" />
+    <circle cx="50" cy="50" r="10" fill="#f48fb1" />
+  </svg>
+  
+  <script>
+    // Create floating particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 20; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      
+      // Random size
+      const size = Math.random() * 15 + 5;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      
+      // Random position
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.top = `${Math.random() * 100}%`;
+      
+      // Random animation duration and delay
+      const duration = Math.random() * 20 + 10;
+      const delay = Math.random() * 10;
+      particle.style.animation = `float ${duration}s infinite linear ${delay}s`;
+      
+      particlesContainer.appendChild(particle);
+    }
+    
+    // Button hover and click effects
+    const talkButton = document.getElementById('talkButton');
+    let clickCount = 0;
+    
+    talkButton.addEventListener('click', () => {
+      clickCount++;
+      if (clickCount === 1) {
+        talkButton.textContent = 'Please? [Press Y]';
+      } else if (clickCount === 2) {
+        talkButton.textContent = 'Pretty please? [Y]';
+      } else if (clickCount === 3) {
+        talkButton.textContent = '*puppy eyes* [Y]';
+      } else {
+        talkButton.textContent = '♥ Thank you! ♥';
+        talkButton.style.backgroundColor = '#9c27b0';
+      }
+    });
+    
+    // Easter egg: Konami code sequence
+    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let konamiIndex = 0;
+    
+    document.addEventListener('keydown', (e) => {
+      // Handle Y key press
+      if (e.key.toLowerCase() === 'y') {
+        talkButton.click();
+      }
+      
+      // Check for Konami code
+      if (e.key === konamiCode[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiCode.length) {
+          // Konami code activated!
+          document.body.style.backgroundImage = 'linear-gradient(45deg, #ff80ab, #82b1ff)';
+          document.querySelector('h1').textContent = 'Super Bestie Livv!';
+          konamiIndex = 0;
+        }
+      } else {
+        konamiIndex = 0;
+      }
+    });
+  </script>
+</body>
+</html>
